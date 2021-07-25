@@ -1,0 +1,47 @@
+package com.company;
+
+import com.sun.jdi.Value;
+import org.w3c.dom.ls.LSOutput;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.*;
+abstract class A
+{
+    public abstract void show();
+}
+class B extends A
+{
+    public void show()
+    {
+        System.out.println("This is abstract class definition in B ");
+    }
+}
+class C extends A
+{
+    public void show()
+    {
+        System.out.println("This is abstract class definition in C ");
+    }
+}
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        B obj1 = new B();
+        C obj2= new C();
+        obj1.show();
+        obj2.show();
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
